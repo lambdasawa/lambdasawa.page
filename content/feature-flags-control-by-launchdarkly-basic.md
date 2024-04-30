@@ -1,5 +1,5 @@
 +++
-title = "LaunchDarkly による Feature Flags 制御の基礎GitHubで開く"
+title = "LaunchDarkly による Feature Flags 制御の基礎"
 date = "2022-10-22"
 +++
 

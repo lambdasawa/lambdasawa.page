@@ -1,5 +1,5 @@
 +++
-title = "AWS SDK for Go v1 の API 呼び出しごとに OpenTelemetry の Span を自動で作成するGitHubで開く"
+title = "AWS SDK for Go v1 の API 呼び出しごとに OpenTelemetry の Span を自動で作成する"
 date = "2022-10-16"
 +++
 

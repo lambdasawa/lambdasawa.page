@@ -1,5 +1,5 @@
 +++
-title = "GoからJavaScriptのライブラリを呼び出すGitHubで開く"
+title = "GoからJavaScriptのライブラリを呼び出す"
 date = "2022-10-16"
 +++
 
