@@ -1,6 +1,6 @@
 +++
 title = "ジャムジャム！！Jamstack_3 で発表しました"
-date = "1995-06-16"
+date = "2021-12-09"
 [extra]
 toc = true
 +++
