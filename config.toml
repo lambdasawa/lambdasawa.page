@@ -50,7 +50,9 @@ smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` 
 
 menu = [
   { url = "about", name = "About", slash = true, blank = false, size = "s110" },
-  { url = "atom.xml", name = "Feed", slash = true, blank = false, size = "s110" },
+  { url = "https://x.com/lambdasawa", name = "Twitter", slash = true, blank = false, size = "s110" },
+  { url = "https://misskey.io/@lambdasawa", name = "Misskey", slash = true, blank = false, size = "s110" },
+  { url = "https://www.wantedly.com/id/lambdasawa", name = "Wantedly", slash = true, blank = false, size = "s110" },
   # { url = "archive", name = "Posts", slash = true, blank = false, size = "s110" },
   # { url = "categories", name = "Categories", slash = true, blank = false, size = "s110" },
   # { url = "tags", name = "Tags", slash = true, blank = false, size = "s110" },
@@ -118,7 +120,7 @@ twitter_meta = "lambdasawa"             # for SEO: twitter:site and twitter:crea
 ###   https://github.com/Jieiku/abridge/blob/master/templates/macros/social.html
 ###############################################################################
 
-# feed = false # this adds the RSS feed icon in the footer.
+feed = true # this adds the RSS feed icon in the footer.
 # mail = "lambdasawa@gmail.com"
 # mastodon = "@lambdasawa"
 # element = "matrix.example.com"
