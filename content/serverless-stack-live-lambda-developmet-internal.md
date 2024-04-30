@@ -11,8 +11,7 @@ Serverless Framework には Live Lambda Development という仕組みが存在�
 
 この仕組みを活用することによって、ローカルのユニットテストより本番に近い環境 && AWS にデプロイするより早いサイクルで開発を行うことができます。
 
-Live Lambda Development のアイデア
------------------------------
+## Live Lambda Development のアイデア
 
 そもそも何もデプロイしなくて良いならそれが一番早い、と考えることができます。
 
@@ -21,17 +20,16 @@ Live Lambda Development では Lambda とローカルのコードを WebSocket �
 その `event` は WebSocket でローカルマシンに渡されて処理されます。
 もちろん本番デプロイ用のコマンド (`sst deploy`)を実行すると自分で書いたコードがそのままデプロイされます。
 
-`sst start` をしたときに起こること
------------------------
+## `sst start` をしたときに起こること
 
-`sst start`は大きく分けて2つの処理を順に行います。
+`sst start`は大きく分けて 2 つの処理を順に行います。
 
 1. 各種 AWS リソースの作成
 2. ローカルマシンで WebSocket の通信を行う仕組みの起動
 
-### 作成される AWS リソースについて
+## 作成される AWS リソースについて
 
-![](https://images.microcms-assets.io/assets/6d557c87790a4d889ca5641b57b7947f/25bfcc31a85145ceb9f27047dd45de13/serverless-stack.jpg)
+![img](https://images.microcms-assets.io/assets/6d557c87790a4d889ca5641b57b7947f/25bfcc31a85145ceb9f27047dd45de13/serverless-stack.jpg)
 
 左の API Gateway (HTTP) と Lambda はアプリケーションのコードが含まれるものです。
 
@@ -52,7 +50,7 @@ DynamoDB にはクライアントとのコネクション ID が保持されて�
 WebSocket 側の Lambda が HTTP 側の Lambda から `event` を WebSocket で受け取って起動した際、それをクライアント側の WebSocket コネクションに流す必要がありますが、その時点でその Lambda のプロセスがクライアントのコネクションを保持しているとは限らないのでこの情報を永続化する必要があります。
 これらのデプロイは AWS CDK (CloudFormation) を使用して行われるため数分待たされてしまうのですが、初回デプロイのみの問題です。
 
-### ローカルマシンで WebSocket の通信を行う仕組み
+## ローカルマシンで WebSocket の通信を行う仕組み
 
 これは単純です。
 [Node.js の ws パッケージ](https://github.com/websockets/ws)で API Gateway と WebSocket のコネクションを貼って `event` が飛んでくるのを待ちます。
@@ -60,8 +58,7 @@ WebSocket 側の Lambda が HTTP 側の Lambda から `event` を WebSocket で�
 
 --
 
-HTTPリクエストが発行されてからHTTPレスポンスが返されるまでの流れ
-------------------------------------
+## HTTP リクエストが発行されてから HTTP レスポンスが返されるまでの流れ
 
 各要素について説明を行いましたが、まとめると以下のような順で処理が行われるということになります。
 
@@ -74,15 +71,13 @@ HTTPリクエストが発行されてからHTTPレスポンスが返されるま
 - WebSocket の Lambda はローカルマシンから受け取った処理結果を HTTP の Lambda から受け取る
 - HTTP の Lambda はブラウザに処理結果を送る
 
-参考リンク
------
+## 参考リンク
 
 - [HTTP の Lambda にデプロイされるコード](https://github.com/serverless-stack/serverless-stack/blob/890a468a6fffafe9e39a53f97b7a30353720cdbc/packages/resources/assets/stub/index.js)
 - [WebSocket の Lambda にデプロイされるコード](https://github.com/serverless-stack/serverless-stack/blob/890a468a6f/packages/cli/assets/debug-stack/lambda/wsDefault.js)
 - [ローカルマシンで起動するコード](https://github.com/serverless-stack/serverless-stack/blob/890a468a6f/packages/cli/scripts/start.js)
 
-終わりに
-----
+## 終わりに
 
 サーバレスのシステムは運用は楽なものの開発は難しいという側面があると思います。
 そんな中で最近はこの Serverless Stack だったり AWS CDK の hotswap 機能がリリースされたりしました。

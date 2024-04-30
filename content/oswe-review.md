@@ -1,6 +1,7 @@
 +++
 title = "OffSec Web Expert 受験レポート"
 date = "2023-10-03"
+toc = true
 +++
 
 主に腕試し目的で 2023 年の 9 月末頃に OffSec Web Expert (OSWE) という Web セキュリティに関する試験を受けました。

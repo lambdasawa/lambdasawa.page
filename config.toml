@@ -63,9 +63,9 @@ menu_footer = [
 ]
 
 toc = true
-recent = true     # TOC / index
+recent = false    # TOC / index
 recent_items = 15
-series = true
+series = false
 series_items = 9  # Max number of items to display in series list, use 0 to disable
 #Series_parts = "$NUMBER_OF_PARTS part Series"
 
@@ -118,29 +118,29 @@ twitter_meta = "lambdasawa" # for SEO: twitter:site and twitter:creator
 ###   https://github.com/Jieiku/abridge/blob/master/templates/macros/social.html
 ###############################################################################
 
-feed = true                   # this adds the RSS feed icon in the footer.
-mail = "lambdasawa@gmail.com"
-mastodon = "@lambdasawa"
+# feed = false # this adds the RSS feed icon in the footer.
+# mail = "lambdasawa@gmail.com"
+# mastodon = "@lambdasawa"
 # element = "matrix.example.com"
 # buymeacoffee = "your-user-name"
 # kofi = "your-user-name"
-discord = "lambdasawa"  # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
-twitter = "lambdasawa"
-facebook = "lambdasawa"
+# discord = "lambdasawa"  # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
+# twitter = "lambdasawa"
+# facebook = "lambdasawa"
 # linkedin = "lambdasawa"
 # gitlab = "lambdasawa"
-github = "lambdasawa"
+# github = "lambdasawa"
 # codeberg = "your-user-name"       # Everything after https://codeberg.org/   eg: username  *or*  username/repository
 # github_sponsor = "lambdasawa"
 # bitbucket = "your-user-name"
 # python = "your-user-name"
 # docker = "your-user-name"
 # stack = "your-user-name"
-instagram = "lambdasawa"
+# instagram = "lambdasawa"
 #pixelfed = "@your-user-name" # Heaviest icon, off by default
 # pinterest = "your-user-name"
 # twitch = "your-user-name"
-youtube = "channel/lambdasawa"
+# youtube = "channel/lambdasawa"
 # researchgate = "your-profile-id"
 
 
