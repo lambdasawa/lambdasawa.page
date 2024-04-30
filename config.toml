@@ -14,8 +14,8 @@ minify_html = false
 build_search_index = true
 generate_feed = true
 taxonomies = [
-#    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+  #    {name = "categories", feed = true},
+  { name = "tags", feed = true },
 ]
 
 #feed_filename = "atom.xml"
@@ -23,12 +23,12 @@ taxonomies = [
 #ignored_content = ["*.{graphml,xlsx}", "temp.*"]
 #hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
 
-[search]                # Options specific to elasticlunr search.
+[search] # Options specific to elasticlunr search.
 # index format can be: elasticlunr_json or elasticlunr_javascript
 index_format = "elasticlunr_json"
-include_title = true        # include title of page/section in index
-include_description = true # include description of page/section in index
-include_content = true      # include rendered content of page/section in index
+include_title = true              # include title of page/section in index
+include_description = true        # include description of page/section in index
+include_content = true            # include rendered content of page/section in index
 # truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
 
 [markdown]
@@ -46,13 +46,13 @@ title = "Abridge"
 description = "Abridge est un thème Zola rapide et léger utilisant le html sémantique, le CSS abridge.css class-light et aucun JS obligatoire."
 generate_feed = true
 build_search_index = true
-search.include_title = true # include title of page/section in index
-search.include_description = true # include description of page/section in index
-search.include_content = true # include rendered content of page/section in index
+search.include_title = true                                                                                                                     # include title of page/section in index
+search.include_description = true                                                                                                               # include description of page/section in index
+search.include_content = true                                                                                                                   # include rendered content of page/section in index
 # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
 taxonomies = [
-#    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+  #    {name = "categories", feed = true},
+  { name = "tags", feed = true },
 ]
 
 [languages.es]
@@ -60,13 +60,13 @@ title = "Abridge"
 description = "Abridge es un tema de Zola rápido y liviano que utiliza HTML semántico, CSS ligero de clase abridge.css y JS no obligatorio."
 generate_feed = true
 build_search_index = true
-search.include_title = true # include title of page/section in index
-search.include_description = true # include description of page/section in index
-search.include_content = true # include rendered content of page/section in index
+search.include_title = true                                                                                                                  # include title of page/section in index
+search.include_description = true                                                                                                            # include description of page/section in index
+search.include_content = true                                                                                                                # include rendered content of page/section in index
 # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
 taxonomies = [
-#    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+  #    {name = "categories", feed = true},
+  { name = "tags", feed = true },
 ]
 
 [extra]
@@ -78,30 +78,30 @@ taxonomies = [
 ###############################################################################
 
 menu = [
-#    {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
-    {url = "about", name = "About", slash = true, blank = false, size="s110"},
-    {url = "archive", name = "Posts", slash = true, blank = false, size="s110"},
-#    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
-    {url = "tags", name = "Tags", slash = true, blank = false, size="s110"},
+  #    {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
+  { url = "about", name = "About", slash = true, blank = false, size = "s110" },
+  { url = "archive", name = "Posts", slash = true, blank = false, size = "s110" },
+  #    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
+  { url = "tags", name = "Tags", slash = true, blank = false, size = "s110" },
 ]
 menu_footer = [
-    {url = "about", name = "About", slash = true, blank = false},
-    {url = "contact", name = "Contact", slash = true, blank = false},
-    {url = "privacy", name = "Privacy", slash = true, blank = false},
-    {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true},
+  { url = "about", name = "About", slash = true, blank = false },
+  { url = "contact", name = "Contact", slash = true, blank = false },
+  { url = "privacy", name = "Privacy", slash = true, blank = false },
+  { url = "sitemap.xml", name = "Sitemap", slash = false, blank = true },
 ]
 
 toc = true
-recent = true # TOC / index
+recent = true     # TOC / index
 recent_items = 15
 series = true
-series_items = 9 # Max number of items to display in series list, use 0 to disable
+series_items = 9  # Max number of items to display in series list, use 0 to disable
 #Series_parts = "$NUMBER_OF_PARTS part Series"
 
-meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, updated=false, categories_tags=true, divider="" }
-meta_post = { position="top", size="s95", author=true, readtime=false, readstring="min read", date=true, updated=true, categories_tags=true, divider="" }
+meta_index = { position = "bottom", size = "s90", author = false, readtime = false, readstring = "min", date = true, updated = false, categories_tags = true, divider = "" }
+meta_post = { position = "top", size = "s95", author = true, readtime = false, readstring = "min read", date = true, updated = true, categories_tags = true, divider = "" }
 
-hide_section_dates = false # hides the date for sections that use posts.html as their template.
+hide_section_dates = false        # hides the date for sections that use posts.html as their template.
 hide_page_nextprev_titles = false # hides the next/previous titles for pages that use page.html as their template.
 title_size_index = "s85"
 footer_size = "s90"
@@ -115,8 +115,8 @@ footer_credit = true
 textlogo = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge'
 
 sitedesc = false # enables or disables the display of the site description below the logo.
-headhr = false # show or hide horizontal rule below header
-foothr = true # show or hide horizontal rule above footer
+headhr = false   # show or hide horizontal rule below header
+foothr = true    # show or hide horizontal rule above footer
 
 ### $CURRENT_YEAR and $SITE_TITLE can be used anywhere within the copyright, you can change their position or you can also delete them and type whatever you want instead.
 #copyright = false # set to false to disable the copyright.
@@ -130,15 +130,15 @@ foothr = true # show or hide horizontal rule above footer
 ### To always set the page title exactly eg "Abridge" then comment out title_addition or set to false (not recommend, bad for SEO)
 ###############################################################################
 
-title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
-title_addition = "Fast & Lightweight Zola Theme" # a default value for title addition
-author = "Jake G" # Put Your Name here
+title_separator = "|"                                                                                 # Separator between title and title_addition, set as |, -, _, etc
+title_addition = "Fast & Lightweight Zola Theme"                                                      # a default value for title addition
+author = "Jake G"                                                                                     # Put Your Name here
 keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
-banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
-twitter_meta = "your-user-name" # for SEO: twitter:site and twitter:creator
+banner = "banner.png"                                                                                 # Used as default image for OpenGraph/Twitter if page specific image is undefined.
+twitter_meta = "your-user-name"                                                                       # for SEO: twitter:site and twitter:creator
 google = "Your Google Site verification code."
 bing = "Your Bing Site verification code."
-seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twitter
+seo = true                                                                                            # enable or disable seo-related meta tags: opengraph, facebook, twitter
 #dev = false # development mode, if true then robots.txt should prevent search indexing.
 
 
@@ -147,19 +147,19 @@ seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twit
 ###   https://github.com/Jieiku/abridge/blob/master/templates/macros/social.html
 ###############################################################################
 
-feed = true # this adds the RSS feed icon in the footer.
+feed = true                       # this adds the RSS feed icon in the footer.
 mail = "name@example.com"
 mastodon = "@your-user-name"
 element = "matrix.example.com"
 buymeacoffee = "your-user-name"
 kofi = "your-user-name"
-discord = "your-discord" # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
+discord = "your-discord"          # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
 twitter = "your-user-name"
 facebook = "your-user-name"
 linkedin = "your-user-name"
 gitlab = "your-user-name"
 github = "your-user-name"
-codeberg = "your-user-name" # Everything after https://codeberg.org/   eg: username  *or*  username/repository
+codeberg = "your-user-name"       # Everything after https://codeberg.org/   eg: username  *or*  username/repository
 github_sponsor = "your-user-name"
 bitbucket = "your-user-name"
 python = "your-user-name"
@@ -203,17 +203,17 @@ researchgate = "your-profile-id"
 
 # do NOT include a trailing slash on the online URL
 #online_url = "https://abridge.netlify.app"
-online_indexformat = "elasticlunr_json"# used to restore your preferred index format when offline = false
-offline = false # implies uglyurls=true and integrity=false, when true NPM/node will automatically set the path for the base_url, it will build the site, then set the base_url back to what it was.
+online_indexformat = "elasticlunr_json" # used to restore your preferred index format when offline = false
+offline = false                         # implies uglyurls=true and integrity=false, when true NPM/node will automatically set the path for the base_url, it will build the site, then set the base_url back to what it was.
 
 uglyurls = false # if set to true then links are generated with the full path. eg https://abridge.netlify.app/index.html
 integrity = true # increases site security, should normally be true. (setting to false is useful during js development)
 js_bundle = true # multiple javascript files combined into a single file (setting to false is useful during js development)
 
-js_copycode = true # The copy button on code blocks that allows you to copy them to the clipboard.
-js_email_encode = true # obfuscates email address in footer
-js_prestyle = true # used to preload: FontAwesome, Katex, external Google Fonts
-js_switcher = true # The button that allows manually changing between light/dark mode.
+js_copycode = true           # The copy button on code blocks that allows you to copy them to the clipboard.
+js_email_encode = true       # obfuscates email address in footer
+js_prestyle = true           # used to preload: FontAwesome, Katex, external Google Fonts
+js_switcher = true           # The button that allows manually changing between light/dark mode.
 js_switcher_default = "dark" # default nojs switcher mode: dark, light (make sure to also set $switcherDefault in abridge.scss)
 
 search_library = 'elasticlunr'
@@ -231,7 +231,7 @@ webmanifest = "manifest.min.json" # Required for PWAs
 ###  The options below other than pwa=true, only come into play when the npm/node script is ran.
 ###############################################################################
 
-pwa = true # true to load the service worker
+pwa = false        # true to load the service worker
 pwa_VER = '3.11.0' # Service Worker cache version. (increment if you need to force a new cache)
 
 ### 3600=1hour, 28800=8hours, 86400=1day, 604800=1week, 1209600=2weeks
@@ -261,10 +261,10 @@ favicon_theme_color = "#333333"
 favicon_ms_color = "#333333"
 favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
 favicon_mask_color = "#ff9900"
-favicon_svg = "favicon.svg" # favicon.svg
-favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
-favicon32 = "favicon-32x32.png" # favicon-32x32.png
-favicon16 = "favicon-16x16.png" # favicon-16x16.png
+favicon_svg = "favicon.svg"            # favicon.svg
+favicon180 = "apple-touch-icon.png"    # apple-touch-icon.png
+favicon32 = "favicon-32x32.png"        # favicon-32x32.png
+favicon16 = "favicon-16x16.png"        # favicon-16x16.png
 
 
 ###############################################################################
