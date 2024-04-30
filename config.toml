@@ -50,6 +50,7 @@ smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` 
 
 menu = [
   { url = "about", name = "About", slash = true, blank = false, size = "s110" },
+  { url = "https://github.com/lambdasawa", name = "GitHub", slash = true, blank = false, size = "s110" },
   { url = "https://x.com/lambdasawa", name = "Twitter", slash = true, blank = false, size = "s110" },
   { url = "https://misskey.io/@lambdasawa", name = "Misskey", slash = true, blank = false, size = "s110" },
   { url = "https://www.wantedly.com/id/lambdasawa", name = "Wantedly", slash = true, blank = false, size = "s110" },
