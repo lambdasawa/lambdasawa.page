@@ -1,6 +1,8 @@
 +++
 title = "Serverless Stack の Live Lambda Development の仕組み"
 date = "2021-10-30"
+[extra]
+toc = true
 +++
 
 [Serverless Stack](https://docs.serverless-stack.com/) という AWS でサーバレスなアプリケーションを作るためのフレームワークが存在します。

@@ -2,6 +2,8 @@
 title = "About"
 date = "1995-06-16"
 hidden = true
+[extra]
+toc = true
 +++
 
 ## SNSなど

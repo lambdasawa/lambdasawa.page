@@ -1,6 +1,8 @@
 +++
 title = "Burp Suite Certified Practitioner 受験レポート"
 date = "2023-07-25"
+[extra]
+toc = true
 +++
 
 ## この記事の目的

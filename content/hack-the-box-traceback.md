@@ -1,6 +1,8 @@
 +++
 title = "Hack The Box: Traceback"
 date = "2020-08-21"
+[extra]
+toc = true
 +++
 
 最近 [Hack The Box](https://app.hackthebox.eu/login) というものにハマっています。

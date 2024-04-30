@@ -1,6 +1,8 @@
 +++
 title = "Amplify で function の hotswap を実現する方法について"
 date = "2021-12-08"
+[extra]
+toc = true
 +++
 
 この記事は「[AWS Amplify Advent Calendar 2021](https://qiita.com/advent-calendar/2021/amplify)」の9日目の記事です。
