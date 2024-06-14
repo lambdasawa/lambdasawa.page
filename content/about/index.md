@@ -3,10 +3,8 @@ title = "About"
 date = "1995-06-16"
 +++
 
-- 2023年の秋ごろからセキュリティエンジニアとして働き始めました
-  - 主に Web アプリケーションの診断を行っています
-- バックエンド/インフラエンジニアとして8年ほど働いていました
-  - Go, TypeScript, AWS (Terraform) に慣れています
+- 現在はセキュリティエンジニアとして主にWebアプリケーションの脆弱性診断を起こっています
+- 以前はソフトウェアエンジニアとして主にWebアプリケーションの設計/開発/インフラ構築を行っていました
 
 ## 経歴、資格、コンテスト出場歴など
 
@@ -31,13 +29,13 @@ date = "1995-06-16"
 - [LAPRAS](https://lapras.com/public/lambdasawa)
 - [Findy](https://findy-code.io/share_profiles/EI2gaxVje83Nn)
 - [X (Twitter)](https://twitter.com/lambdasawa)
-- [Bluesky](https://bsky.app/profile/lambdasawa.bsky.social)
-- [Mastodon](https://mstdn.jp/@lambdasawa)
-- [Misskey](https://misskey.io/@lambdasawa)
 - [Facebook](https://www.facebook.com/lambdasawa)
 - [Instagram](https://www.instagram.com/lambdasawa/)
+- [Bluesky](https://bsky.app/profile/lambdasawa.bsky.social)
+- [Mastodon](https://mstdn.jp/@lambdasawa)
 - [Threads](https://www.threads.net/@lambdasawa)
 - [Nostr](https://coracle.social/notes)
+- [Misskey](https://misskey.io/@lambdasawa)
 - Discord (@lambdasawa)
 - [Amazon 欲しいものリスト](https://www.amazon.co.jp/hz/wishlist/ls/3GEP6B955K47M?ref_=wl_share)
 - [Steam ウィッシュリスト](https://store.steampowered.com/wishlist/profiles/76561198288017158#sort=order)

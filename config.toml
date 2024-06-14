@@ -14,8 +14,8 @@ minify_html = false
 build_search_index = false
 generate_feed = true
 taxonomies = [
-  # { name = "categories", feed = true},
-  # { name = "tags", feed = true },
+    # { name = "categories", feed = true},
+    # { name = "tags", feed = true },
 ]
 
 #feed_filename = "atom.xml"
@@ -49,20 +49,18 @@ smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` 
 ###############################################################################
 
 menu = [
-  { url = "about", name = "About", slash = true, blank = false, size = "s110" },
-  { url = "https://github.com/lambdasawa", name = "GitHub", slash = true, blank = false, size = "s110" },
-  { url = "https://x.com/lambdasawa", name = "Twitter", slash = true, blank = false, size = "s110" },
-  { url = "https://misskey.io/@lambdasawa", name = "Misskey", slash = true, blank = false, size = "s110" },
-  { url = "https://www.wantedly.com/id/lambdasawa", name = "Wantedly", slash = true, blank = false, size = "s110" },
-  # { url = "archive", name = "Posts", slash = true, blank = false, size = "s110" },
-  # { url = "categories", name = "Categories", slash = true, blank = false, size = "s110" },
-  # { url = "tags", name = "Tags", slash = true, blank = false, size = "s110" },
+    { url = "about", name = "About", slash = true, blank = false, size = "s110" },
+    { url = "https://github.com/lambdasawa", name = "GitHub", slash = true, blank = false, size = "s110" },
+    { url = "https://www.wantedly.com/id/lambdasawa", name = "Wantedly", slash = true, blank = false, size = "s110" },
+    # { url = "archive", name = "Posts", slash = true, blank = false, size = "s110" },
+    # { url = "categories", name = "Categories", slash = true, blank = false, size = "s110" },
+    # { url = "tags", name = "Tags", slash = true, blank = false, size = "s110" },
 ]
 menu_footer = [
-  #  { url = "about", name = "About", slash = true, blank = false },
-  #  { url = "contact", name = "Contact", slash = true, blank = false },
-  #  { url = "privacy", name = "Privacy", slash = true, blank = false },
-  #  { url = "sitemap.xml", name = "Sitemap", slash = false, blank = true },
+    #  { url = "about", name = "About", slash = true, blank = false },
+    #  { url = "contact", name = "Contact", slash = true, blank = false },
+    #  { url = "privacy", name = "Privacy", slash = true, blank = false },
+    #  { url = "sitemap.xml", name = "Sitemap", slash = false, blank = true },
 ]
 
 toc = true
